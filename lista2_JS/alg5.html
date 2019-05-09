@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title>Lista 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+
+<body class="back">
+    <div class="universal">
+        <h1>Exercicio 5</h1>
+        <h3> Mini Cadastro </h3>
+        <p>
+            Nome: <input type="text" id="nome">
+        </p>
+        <p>
+            Telefone: <input type="tel" id="tel">
+        </p>
+        <p>
+            Endereço: <input type="text" id="end">
+        </p>
+        <p id="demonome"></p>
+        <p id="demotel"></p>
+        <p id="demoend"></p>
+        <p>
+            <button type="button" onclick="imp()">Imprimir</button>
+        </p>
+
+        <button onclick="window.location.href = 'index.html';">Voltar</button>
+    </div>
+
+
+    <script>
+        function imp() {
+            var nome;
+            var tel;
+            var end;
+
+            nome = document.getElementById("nome").value;
+            tel = document.getElementById("tel").value;
+            end = document.getElementById("end").value;
+
+            document.getElementById("demonome").innerHTML = ("Nome: ") + nome;
+            document.getElementById("demotel").innerHTML = ("Telefone: ") + tel;
+            document.getElementById("demoend").innerHTML = ("Endereço: ") + end;
+        }
+    </script>
+</body>
+
+</html>

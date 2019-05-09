@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Lista 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body class="back">
+    <div class="universal">
+        <h2>Exercicio 3</h2>
+        <p> Digite dois numeros </p>
+        <input id="num">
+        <input id="num2">
+        <button type="button" onclick="myFunction()">mostar 1 </button>
+        <button type="button" onclick="myFunction()">mostar 2 </button>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p>
+            <button onclick="window.location.href = 'index.html';">Voltar</button>
+        </p>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x, y;
+            x = document.getElementById("num").value;
+            y = document.getElementById("num2").value;
+            document.getElementById("demo").innerHTML = ("O primeiro numero foi: ") + x;
+            document.getElementById("demo2").innerHTML = ("O segundo numero foi: ") + y;
+        }
+    </script>
+</body>
+
+</html>

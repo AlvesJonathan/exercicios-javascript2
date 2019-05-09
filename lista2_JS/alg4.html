@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Lista 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body class="back">
+    <div class="universal">
+        <h2>Exercicio 4</h2>
+        <p> Digite dois numeros </p>
+        <input id="num">
+        <button type="button" onclick="ant()">Antecessor</button>
+        <button type="button" onclick="suc()">Sucessor</button>
+        <p id="demoant"></p>
+        <p id="demosuc"></p>
+        <p>
+            <button onclick="window.location.href = 'index.html';">Voltar</button>
+        </p>
+    </div>
+
+
+
+    <script>
+        function ant() {
+            var x;
+            var z = 1;
+            var ant;
+            x = document.getElementById('num').value;
+            ant = parseInt(x) - parseInt(z);
+            document.getElementById("demoant").innerHTML = ("O antecessor é: ") + ant;
+        }
+
+        function suc() {
+            var x;
+            var z = 1;
+            var suc;
+
+            x = document.getElementById('num').value;
+            suc = parseInt(x) + parseInt(z);
+            document.getElementById("demosuc").innerHTML = ("O sucessor é: ") + suc;
+        }
+    </script>
+</body>
+
+</html>

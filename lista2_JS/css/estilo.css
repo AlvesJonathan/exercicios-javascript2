@@ -1,0 +1,45 @@
+.back {
+    background: url(../img/fundom.jpg)center;
+}
+
+.corpo {
+    background: #00000040;
+    border-radius: 20px;
+    height: 50%;
+    font-family: cursive;
+    margin: 30px;
+}
+
+.topo {
+    text-align: center;
+    color: #ffffff;
+}
+
+.lista {
+    text-align: justify;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.lista a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.rodape {
+    text-align: right;
+    padding-right: 50px;
+    color: #ffffff;
+}
+
+.universal {
+    background: #00000040;
+    border-radius: 20px;
+    height: 50%;
+    font-family: cursive;
+    margin: 30px;
+    color: #ffffff;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}

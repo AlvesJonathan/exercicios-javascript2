@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title>Lista 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+
+<body class="back">
+    <div class="universal">
+        <h1>Exercicio 12</h1>
+        <p>
+            Digite o raio de um circulo: <input type="number" id="raio">
+        </p>
+        <p id="demoarea"></p>
+        <p id="demoperim"></p>
+        <p>
+            <button type="button" onclick="farea()"> Area </button>
+            <button type="button" onclick="fperim()"> Perimetro </button>
+        </p>
+
+        <button onclick="window.location.href = 'index.html';">Voltar</button>
+    </div>
+
+
+    <script>
+        function farea() {
+            var raio;
+            var pi = 3.14;
+            var area;
+
+            raio = document.getElementById("raio").value;
+            area = (parseFloat(pi) * parseFloat(pi)) * parseFloat(raio);
+            document.getElementById("demoarea").innerHTML = ("A area desse circulo é: ") + area;
+        }
+
+        function fperim() {
+            var raio;
+            var pi = 3.14;
+            var perim;
+
+            raio = document.getElementById("raio").value;
+            perim = (parseFloat(raio) * parseFloat(raio)) * parseFloat(pi);
+            document.getElementById("demoperim").innerHTML = ("O perimetro desse circulo é: ") + perim;
+        }
+    </script>
+</body>
+
+
+
+</html>

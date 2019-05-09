@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title>Lista 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+
+<body class="back">
+    <div class="universal">
+        <h1>Exercicio 8</h1>
+        <p> Terça parte de um numero </p>
+        <p>
+            Digite um numero: <input type="number" id="num">
+        </p>
+        <p id="demo"></p>
+
+        <p>
+            <button type="button" onclick="divi()">3ª Parte</button>
+        </p>
+
+        <button onclick="window.location.href = 'index.html';">Voltar</button>
+    </div>
+
+
+    <script>
+        function divi() {
+            var num;
+            var x = 3;
+            var divisao;
+
+            num = document.getElementById("num").value;
+            divisao = parseInt(num) / parseInt(x);
+
+            document.getElementById("demo").innerHTML = ("A terça parte desse numero é: ") + divisao;
+
+        }
+    </script>
+</body>
+
+</html>

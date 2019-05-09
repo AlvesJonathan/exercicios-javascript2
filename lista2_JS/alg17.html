@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> Algoritmo</title>
+        <meta charset="utf-8">
+    </head>
+
+    
+    <body>
+        <h1>Exercicio 16</h1>
+        <p>
+            Digite um numero: <input id="num">
+        </p>
+        <p id="demover"></p>
+        <p>
+            <button type="button" onclick="fver()">Verificar</button>
+        </p>
+
+        <button onclick="window.location.href = 'index.html';">Voltar</button>
+        
+         <script>
+            function fver(){
+                var num;
+                var ver;
+                
+                num = document.getElementById("num").value;
+                
+                
+                if(num > 20){
+                    document.getElementById("demover").innerHTML = ("O numero digitado é maior que 20");
+                }
+                else if(num == 20){
+                    document.getElementById("demover").innerHTML = ("O numero digitado é igual 20");                             
+                }
+                else{
+                     document.getElementById("demover").innerHTML = ("O numero digitado é menor que 20");
+                }
+                
+            }
+        </script>
+    </body>
+
+</html>

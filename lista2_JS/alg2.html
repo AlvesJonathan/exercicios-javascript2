@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Algoritmo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body class="back">
+    <div class="universal">
+        <h2>Exercicio 2</h2>
+        <p>Digite um numero inteiro</p>
+        <input id="num">
+        <button type="button" onclick="mostrar()">mostar</button>
+        <p id="demo"></p>
+        <p>
+            <button onclick="window.location.href = 'index.html';">Voltar</button>
+        </p>
+    </div>
+
+    <script>
+        function mostrar() {
+            var x;
+            x = document.getElementById("num").value;
+            document.getElementById("demo").innerHTML = ("O numero digitado foi: ") + x;
+        }
+    </script>
+</body>
+
+</html>

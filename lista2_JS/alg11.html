@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title>Lista 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+
+<body class="back">
+    <div class="uniuniversal">
+        <h1>Exercicio 11</h1>
+        <p>
+            Digite a Base: <input type="number" id="base">
+        </p>
+        <p>
+            Digite a Altura: <input type="number" id="alt">
+        </p>
+        <p id="demoarea"></p>
+        <p id="demoper"></p>
+        <p id="demodia"></p>
+        <p>
+            <button type="button" onclick="farea()"> Area </button>
+            <button type="button" onclick="fper()"> Perimetro </button>
+            <button type="button" onclick="fdia()"> Diagonal </button>
+        </p>
+
+        <button onclick="window.location.href = 'index.html';">Voltar</button>
+    </div>
+
+
+    <script>
+        function farea() {
+            var calcarea;
+            var base;
+            var alt;
+
+            base = document.getElementById("base").value;
+            alt = document.getElementById("alt").value;
+            calcarea = parseFloat(base) * parseFloat(alt);
+
+            document.getElementById("demoarea").innerHTML = ("A area do Retangulo é: ") + calcarea;
+        }
+
+        function fper() {
+            var calcper;
+            var x = 2;
+            var base;
+            var alt;
+
+            base = document.getElementById("base").value;
+            alt = document.getElementById("alt").value;
+            calcper = (parseFloat(base) + parseFloat(alt)) * parseFloat(x);
+
+            document.getElementById("demoper").innerHTML = ("O perimetro do Retangulo é: ") + calcper;
+        }
+
+        function fdia() {
+            var calcdia;
+            var x = 2;
+            var base;
+            var alt;
+
+            base = document.getElementById("base").value;
+            alt = document.getElementById("alt").value;
+            calcdia = (parseFloat(base) * parseFloat(base)) + (parseFloat(alt) * parseFloat(alt));
+
+            document.getElementById("demodia").innerHTML = ("A diagonal do Retangulo é: ") + calcdia;
+
+        }
+    </script>
+</body>
+
+
+
+</html>

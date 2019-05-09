@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> Algoritmo</title>
+        <meta charset="utf-8">
+    </head>
+
+    
+    <body>
+        <h1>Exercicio 15</h1>
+        <h3>Vericando positivo, negativo ou nulo </h3>
+        <p>
+            Digite um numero: <input id="num">
+        </p>
+        <p id="demover"></p>
+        <p>
+            <button type="button" onclick="fver()">Verificar</button>
+        </p>
+
+        <button onclick="window.location.href = 'index.html';">Voltar</button>
+        
+         <script>
+            function fver(){
+                var num;
+                var ver;
+                
+                num = document.getElementById("num").value;
+                ver = parseInt(num)==0;
+                
+                if(ver < num){
+                    document.getElementById("demover").innerHTML = ("Esse numero é Positivo!");
+                }
+                else if(ver > num){
+                     document.getElementById("demover").innerHTML = ("Esse numero é Negativo!");
+                }
+                else{
+                     document.getElementById("demover").innerHTML = ("Esse numero é Nulo!");
+                }
+                
+            }
+        </script>
+    </body>
+
+</html>
